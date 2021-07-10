@@ -35,32 +35,47 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    brief:
+      "In progress",
     image: "./ocbc.png",
     position: "Software Engineer Intern",
     company: "Oversea-Chinese Banking Corp",
+    details: [
+      "In progress"
+    ],
   },
   {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    brief:
+      "Developed Python scripts to automate the execution of ETL pipelines, big data processing and bulk uploading of big data onto databases; reduced over 3 hours/week of BAU workload.",
     image: "./ocbc.png",
     position: "Group Credit Analytics Intern",
     company: "Oversea-Chinese Banking Corp",
+    details: [
+      "Developed Python scripts to automate the execution of ETL pipelines, big data processing and bulk uploading of big data onto databases; reduced over 3 hours/week of BAU workload.",
+      "Pitched optimization strategies for data ingestion and modelling to the Head of Risk Portfolio Management and successfully obtained funding for the team.",
+    ],
   },
   {
-    quote:
-      "Developed and debugged complex SQL scripts to extract relevant data from the database.",
+    brief:
+      "Designed the database schemas using Entity-Relationship diagrams and developed the corresponding SQL scripts using Microsoft SQL Developer to retrieve data for 3 different projects; this directly contributed $3600 to the company’s revenue.",
     image: "./accenture.png",
     position: "Business Analyst",
     company: "Accenture Pte Ltd",
+    details: [
+      "Conducted interviews with key business users of a Government Agency to collect information on business processes and clarify user requirements.",
+      "Designed the database schemas using Entity-Relationship diagrams and developed the corresponding SQL scripts using Microsoft SQL Developer to retrieve data for 3 different projects; this directly contributed $3600 to the company’s revenue.",
+    ],
   },
   {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    brief:
+      "Built a defect tracking system on Microsoft Excel to ensure defects arising from eCapitaMall’s payment processing system are fixed within deadlines set in KPIs; this reduced system downtime by 66%.",
     image: "./capitaland.png",
     position: "Digital Transformation Intern",
     company: "CapitaLand Business Ltd",
+    details: [
+      "Built a defect tracking system on Microsoft Excel to ensure defects arising from eCapitaMall’s payment processing system are fixed within deadlines set in KPIs; this reduced system downtime by 66%.",
+      "Drove discussion with team and vendor to develop documentation of eQueue Management System (eQMS) for various stakeholders in CapitaLand’s retail sector. Presented the findings to the Assistant Vice President of Retail Systems.",
+    ],
   },
 ];
 

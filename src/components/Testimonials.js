@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
+import { UsersIcon } from "@heroicons/react/solid";
 import { testimonials } from "../data";
 import "aos/dist/aos.css"
 import Aos from "aos";
@@ -19,23 +19,22 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div data-aos="fade-up" className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-700 bg-opacity-80 p-8 rounded">
-                <div className="inline-flex items-center">
+                <div className="inline-flex items-center mb-6">
                   <img
                     alt="testimonial"
                     src={testimonial.image}
                     className="w-12 rounded-full flex-shrink-0 object-cover object-center"
                   />
                   <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font text-xl text-white">
+                    <span className="title-font text-2xl text-white">
                       {testimonial.position}
                     </span>
                     <span className="text-green-600 text-sm uppercase italic">
                       {testimonial.company}
                     </span>
                   </span>
-                </div>
-                <TerminalIcon className="block w-8 text-gray-500 mb-4" />
-                <p className="leading-relaxed mb-6">{testimonial.quote}</p>
+                </div>                
+                <p className="leading-relaxed mb-3 italic">{testimonial.brief}</p>
                 
               </div>
             </div>
