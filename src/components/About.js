@@ -38,7 +38,7 @@ export default function About() {
             <a
               href="#contact"
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              Work With Me
+              View Resume
             </a>
             <a
               href="#projects"
@@ -54,7 +54,6 @@ export default function About() {
             src="./me3.png"
           />
         </div>
-        
       </div>
     </section>
   );

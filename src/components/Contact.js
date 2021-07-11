@@ -3,8 +3,8 @@ import React from "react";
 export default function Contact() {
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <div className="container px-5 py-20 mx-auto flex sm:flex-nowrap flex-wrap">
+        {/* <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"
@@ -39,13 +39,25 @@ export default function Contact() {
               <p className="leading-relaxed">123-456-7890</p>
             </div>
           </div>
-        </div>
+        </div> */}
+        <div class="lg:w-1/2 md:w-1/2 ml-6 mr-auto px-4 w-full md:py-8 mt-8 md:mt-0">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600">
+            <img alt="..." src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" class="w-full align-middle rounded-t-lg"></img>
+            <blockquote class="relative p-8 mb-4">
+              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style={{height:'95px',top:'-94px'}}><polygon points="-30,95 583,95 583,65" class="text-green-600 fill-current"></polygon></svg>
+          <h4 class="text-xl font-bold text-white">Great for your awesome project</h4>
+          <p class="text-md font-light mt-2 text-white">
+            Putting together a page has never been easier than matching together pre-made components. From landing pages presentation to login areas, you can easily customise and built your pages.
+          </p>
+          </blockquote>
+          </div>
+          </div>
         <form
           netlify
           name="contact"
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          className="lg:w-2/5 md:w-1/2 mr-6 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
+            Connect With Me!
           </h2>
           <p className="leading-relaxed mb-5">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
@@ -87,7 +99,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-white bg-green-600 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded text-lg">
             Submit
           </button>
         </form>

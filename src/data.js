@@ -1,30 +1,30 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "BikerEats Mobile App",
+    subtitle: "Figma, Flutter and Firebase",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+    image: "./bikereats-demo.gif",
     link: "https://reactbootcamp.com",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "COVID-19 Predictor",
+    subtitle: "RShiny",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+    image: "./covid-explorer.gif",
+    link: "https://brancyx.shinyapps.io/covid-dashboard/",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "DemonSlayer",
+    subtitle: "Roblox, Flutter and Firebase",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+    image: "./demon-slayer.gif",
+    link: "https://www.roblox.com/games/6469571208/CZ3003-Demon-Slayer?refPageId=0264f175-6264-4025-be40-8681a16c3f30",
   },
   {
-    title: "Epic Todo App",
+    title: "FoodPanda",
     subtitle: "React Hooks",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
