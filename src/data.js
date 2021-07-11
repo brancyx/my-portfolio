@@ -80,10 +80,9 @@ export const testimonials = [
 ];
 
 export const skills = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
+  {title:"Web Development:", tech:"Javascript, React, Tailwind CSS"},
+  {title:"Mobile Application Development:", tech:"Flutter, React Native"},
+  {title:"Database Management:", tech:"SQL, NoSQL, Google Cloud Firebase"},
+  {title:"Data Analytics:", tech:"Python, R, Tableau, Qlikview"},
+  {title:"Project Management:", tech:"SCRUM, Agile Methodology"},
 ];

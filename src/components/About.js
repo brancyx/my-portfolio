@@ -36,7 +36,7 @@ export default function About() {
           </p>
           <div className="flex justify-center">
             <a
-              href="#contact"
+              href="https://drive.google.com/drive/folders/1fWxvmtyWV690DL1TWufghBKdBJFjA-Zr?usp=sharing"
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               View Resume
             </a>

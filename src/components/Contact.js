@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-20 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div className="container px-5 py-10 mt-10 mx-auto flex sm:flex-nowrap flex-wrap">
         {/* <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
@@ -45,9 +45,12 @@ export default function Contact() {
             <img alt="..." src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" class="w-full align-middle rounded-t-lg"></img>
             <blockquote class="relative p-8 mb-4">
               <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style={{height:'95px',top:'-94px'}}><polygon points="-30,95 583,95 583,65" class="text-green-600 fill-current"></polygon></svg>
-          <h4 class="text-xl font-bold text-white">Great for your awesome project</h4>
+          <h4 class="text-xl font-bold text-white">More about me</h4>
           <p class="text-md font-light mt-2 text-white">
-            Putting together a page has never been easier than matching together pre-made components. From landing pages presentation to login areas, you can easily customise and built your pages.
+            In an ideal day, I would like to work on building applications
+            that are usable and scalable. When I'm not programming, I 
+            would be cycling, catching up on financial news and spending
+            time with my loved ones.
           </p>
           </blockquote>
           </div>
