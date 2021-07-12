@@ -3,33 +3,28 @@ export const projects = [
     title: "BikerEats Mobile App",
     subtitle: "Figma, Flutter and Firebase",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Bikereats is a mobile application which allows cyclists to plan their routes based on the availability of cycling racks in Singapore.",
     image: "./bikereats-demo.gif",
     link: "https://reactbootcamp.com",
+    repo: "https://github.com/brancyx/BikerEats-App",
   },
   {
     title: "COVID-19 Predictor",
     subtitle: "RShiny",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A dashboard for predicting whether a patient has Covid-19 based on symptoms and blood test results. Random forest model was used.",
     image: "./covid-explorer.gif",
     link: "https://brancyx.shinyapps.io/covid-dashboard/",
+    repo: "https://github.com/brancyx/Covid-Dashboard",
   },
   {
     title: "DemonSlayer",
     subtitle: "Roblox, Flutter and Firebase",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Demon Slayer is a computer-based social game to help students learn software engineering in an engaging yet effective way.",
     image: "./demon-slayer.gif",
     link: "https://www.roblox.com/games/6469571208/CZ3003-Demon-Slayer?refPageId=0264f175-6264-4025-be40-8681a16c3f30",
-  },
-  {
-    title: "FoodPanda",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+    repo: "https://drive.google.com/file/d/1rVkOSu_w4CrebP409wTQC4WPiRJSCTfT/view?usp=sharing",
   },
 ];
 

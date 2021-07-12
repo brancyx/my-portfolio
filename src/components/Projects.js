@@ -16,18 +16,16 @@ export default function Projects() {
         <div data-aos="fade-up" className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Apps I've Built
+            Apps
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            Applications that I built for school projects or in 
+            my spare time.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
-              href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
               <div data-aos="fade-up" className="flex relative">
@@ -37,13 +35,26 @@ export default function Projects() {
                   src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                  <h1 className="title-font text-lg font-medium text-white mb-1">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-3">
+                    {project.subtitle}
+                  </h2>
+                  <p className="leading-relaxed mb-5">{project.description}</p>
+                  <div className="flex flex-row justify-center items-center">
+                    <a
+                      href={project.link}
+                      className="inline-flex text-white bg-green-500 border-0 py-1 px-5 focus:outline-none hover:bg-green-600 rounded-sm text-lg">
+                      View
+                    </a>
+                    <a
+                      href={project.repo}
+                      className="inline-flex items-center">
+                      <i class="fab fa-github fa-2x transform ml-8 text-white hover:text-gray-400"></i>
+                    </a>
+                  </div>
+                  
                 </div>
               </div>
             </a>
