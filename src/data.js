@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Bikereats is a mobile application which allows cyclists to plan their routes based on the availability of cycling racks in Singapore.",
     image: "./bikereats-demo.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://appetize.io/app/anry3b1c88fh2zb20qxrt4ux1m",
     repo: "https://github.com/brancyx/BikerEats-App",
   },
   {
