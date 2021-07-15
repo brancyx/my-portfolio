@@ -1,39 +1,28 @@
 import React, { useState } from "react";
-import { send } from 'emailjs-com';
 
 export default function Contact() {
-  const [toSend, setToSend] = useState({
-    from_name: '',
-    from_email: '',
-    message: '',
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const onSubmit = (e) => {
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
     e.preventDefault();
-    send(
-      'service_48rx56i',
-      'template_ykkkfxg',
-      toSend,
-      'user_hFSEDrbIoAhY6BS2Vmw5z'
-    )
-      .then((response) => {
-        alert("Message sent!");
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        alert(err);
-        console.log('FAILED...', err);
-      });
-      setToSend({ 
-        from_name: '',
-        from_email: '',
-        message: '',
-      });
-  };
-
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
 
   return (
     <section id="contact" className="relative">
@@ -54,7 +43,9 @@ export default function Contact() {
           </div>
           </div>
         <form
-          onSubmit={onSubmit}
+          netlify
+          name="contact"
+          onSubmit={handleSubmit}
           className="lg:w-2/5 md:w-1/2 mr-6 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Connect With Me!
@@ -72,11 +63,10 @@ export default function Contact() {
             <input
               type="text"
               id="name"
-              name="from_name"
-              placeholder='Your name'
-              value={toSend.from_name}
-              onChange={handleChange}
+              name="name"
+              placeholder='Your name' 
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -86,11 +76,10 @@ export default function Contact() {
             <input
               type="email"
               id="email"
-              name="from_email"
+              name="email"
               placeholder='Your email'
-              value={toSend.from_email}
-              onChange={handleChange}
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -103,9 +92,8 @@ export default function Contact() {
               id="message"
               name="message"
               placeholder='Your message'
-              value={toSend.message}
-              onChange={handleChange}
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           <button
