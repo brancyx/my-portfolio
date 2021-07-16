@@ -18,6 +18,15 @@ export const projects = [
     repo: "https://github.com/brancyx/Covid-Dashboard",
   },
   {
+    title: "RoboHydrant",
+    subtitle: "Flutter and Firebase",
+    description:
+      "RoboHydrant is a fully integrated IoT system for hydrant testing. Application developed for SCDF X IBM Lifesavers' Innovation Challenge 2021.",
+    image: "./robo-hydrant.gif",
+    link: "https://scdf-lyfsavers.s3-web.jp-tok.cloud-object-storage.appdomain.cloud/index.html",
+    repo: "https://github.com/brancyx/SCDFLyfsavers",
+  },
+  {
     title: "DemonSlayer",
     subtitle: "Roblox, Flutter and Firebase",
     description:
@@ -77,7 +86,8 @@ export const testimonials = [
 export const skills = [
   {title:"Web Development:", tech:"Javascript, React, Tailwind CSS"},
   {title:"Mobile Application Development:", tech:"Flutter, React Native"},
-  {title:"Database Management:", tech:"SQL, NoSQL, Google Cloud Firebase"},
+  {title:"Database Management:", tech:"SQL, NoSQL, SAS, Google Cloud Firebase"},
   {title:"Data Analytics:", tech:"Python, R, Tableau, Qlikview"},
   {title:"Project Management:", tech:"SCRUM, Agile Methodology"},
+  {title:"Robotic Process Automation:", tech:"Python (Selenium, Win32COM...)"},
 ];

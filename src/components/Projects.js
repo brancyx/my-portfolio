@@ -19,8 +19,8 @@ export default function Projects() {
             Apps
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Applications that I built for school projects or in 
-            my spare time.
+            Some applications that I have built for school projects, hackathons or just 
+            for fun.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">

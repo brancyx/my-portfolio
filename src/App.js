@@ -7,12 +7,12 @@ import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Readings from "./components/Readings";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import {HashRouter, Switch, Route} from "react-router-dom"
 
 export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 font-sans">
-      <Router>
+      <HashRouter>
         <Navbar />
       
       
@@ -26,12 +26,21 @@ export default function App() {
           <Footer />
         </Route>
 
+        <Route path="/home" exact>
+          <About />
+          <Projects />
+          <Skills />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </Route>
+
         <Route path="/readings" exact>
           <Readings />
         </Route>
       </Switch>
 
-      </Router>
+      </HashRouter>
     </main>
   );
 }

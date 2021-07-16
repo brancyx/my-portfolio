@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { HashLink} from 'react-router-hash-link';
 import "aos/dist/aos.css"
 import Aos from "aos";
 import Typed from "react-typed";
@@ -40,11 +41,9 @@ export default function About() {
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               View Resume
             </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              See My Past Work  
-            </a>
+            <HashLink to="home#projects" className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" smooth duration={1000}>
+              See My Past Work 
+            </HashLink>
           </div>
         </div>
         <div data-aos="fade-left" className="lg:max-w-lg lg:w-full md:w-1/2 w-0">

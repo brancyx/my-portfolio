@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { HashLink} from 'react-router-hash-link';
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -9,24 +10,22 @@ export default function Navbar() {
   return (
     <header data-aos="fade-down" className="bg-gray-900 md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="/" className="ml-3 text-xl">
+        <HashLink to="home" className="title-font ml-3 text-xl font-medium text-white mb-4 md:mb-0">
             brancyx
-          </a>
-        </a>
+        </HashLink>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-grey-700	flex flex-wrap items-center text-base justify-center">
-          <a href="/#projects" className="mr-5 hover:text-yellow-300">
+          <HashLink to="home#projects" className="mr-5 hover:text-yellow-300" smooth duration={1000}>
             Apps
-          </a>
-          <a href="/#skills" className="mr-5 hover:text-yellow-300">
+          </HashLink>
+          <HashLink to="home#skills" className="mr-5 hover:text-yellow-300" smooth duration={1000}>
             Skills
-          </a>
-          <a href="/#testimonials" className="mr-5 hover:text-yellow-300">
+          </HashLink>
+          <HashLink to="home#testimonials" className="mr-5 hover:text-yellow-300" smooth duration={1000}>
             Experience
-          </a>
-          <a href="/readings" className="mr-5 hover:text-yellow-300">
+          </HashLink>
+          <HashLink to="readings" className="mr-5 hover:text-yellow-300" smooth duration={1000}>
             Inspirations
-          </a>
+          </HashLink>
         </nav>
         <div className="flex justify-center mt-6 md:mt-0">
           <a
