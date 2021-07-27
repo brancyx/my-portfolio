@@ -20,9 +20,9 @@ export default function About() {
           I'm an aspiring&nbsp;
                   <Typed
                     strings={[
-                      "data engineer.",
-                      "back end developer.",
-                      "software engineer."
+                      "software engineer.",
+                      "business analyst.",
+                      "solutions architect."
                     ]}
                     typeSpeed={80}
                     backDelay={1100}

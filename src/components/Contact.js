@@ -36,8 +36,9 @@ export default function Contact() {
           <p class="text-md font-light mt-2 text-white">
             In an ideal day, I would like to work on building applications
             that are usable and scalable. When I'm not programming, I 
-            would be cycling, catching up on financial news and spending
-            time with my loved ones.
+            would be cycling, catching up on financial news or spending
+            time with my loved ones. <br />I represent NTU's Hall 13 in Chess and 
+            Soccer as well so do drop me a message if you fancy a game with me!
           </p>
           </blockquote>
           </div>
