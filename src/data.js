@@ -40,13 +40,11 @@ export const projects = [
 export const testimonials = [
   {
     brief:
-      "In progress",
+      "Built an IOS proof-of-concept application using Swift to test and integrate vendor APIs. Incorporated dependency injection design patterns into the existing application to improve scalability and ease of unit testing; increased test coverage by 5%.",
     image: "./ocbc.png",
-    position: "Software Engineer Intern",
+    position: "iOS Mobile Engineer Intern",
     company: "Oversea-Chinese Banking Corp",
-    details: [
-      "In progress"
-    ],
+    details: ["In progress"],
   },
   {
     brief:
@@ -84,10 +82,16 @@ export const testimonials = [
 ];
 
 export const skills = [
-  {title:"Web Development:", tech:"Javascript, React, Tailwind CSS"},
-  {title:"Mobile Application Development:", tech:"Flutter, React Native"},
-  {title:"Database Management:", tech:"SQL, NoSQL, SAS, Google Cloud Firebase"},
-  {title:"Data Analytics:", tech:"Python, R, Tableau, Qlikview"},
-  {title:"Project Management:", tech:"SCRUM, Agile Methodology"},
-  {title:"Robotic Process Automation:", tech:"Python (Selenium, Win32COM...)"},
+  { title: "Web Development:", tech: "Javascript, React, Tailwind CSS" },
+  { title: "Mobile Application Development:", tech: "Flutter, React Native" },
+  {
+    title: "Database Management:",
+    tech: "SQL, NoSQL, SAS, Google Cloud Firebase",
+  },
+  { title: "Data Analytics:", tech: "Python, R, Tableau, Qlikview" },
+  { title: "Project Management:", tech: "SCRUM, Agile Methodology" },
+  {
+    title: "Robotic Process Automation:",
+    tech: "Python (Selenium, Win32COM...)",
+  },
 ];
