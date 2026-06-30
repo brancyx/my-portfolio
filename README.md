@@ -8,7 +8,7 @@ Personal portfolio site built with Next.js 15, TypeScript, Tailwind CSS v4, and 
 
 Content lives in Sanity, not in this codebase — no commits needed for content updates.
 
-- **Studio URL:** _add your sanity.studio URL here after running `npx sanity deploy`_
+- **Studio URL:** https://brandon-chen-portfolio.sanity.studio/
 - Log in with your Sanity account, edit, and hit **Publish**.
 - The live site rebuilds automatically within a few minutes via the GitHub Actions
   workflow + Sanity webhook (see below).
